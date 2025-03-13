@@ -1,20 +1,24 @@
 # Aplicación de ejemplo en Node.js
 
-![Versión](https://img.shields.io/badge/Versión-0.1.0-blue)
+![Versión](https://img.shields.io/badge/Versión-0.2.0-blue)
 
 Proyecto Web en `Node.js` desarrollado para el Instituto Profesional `Santo Tomás de Valdivia`, diseñado para demostrar los contenidos de la asignatura de `Programación Web`. Este proyecto está desarrollado en `JavaScript`, en el lado del cliente y en el lado del servidor utilizando `Node.js`.
 
 Esta versión, el proyecto solo sirve páginas estáticas, el `home` y `about`, es solo para mostrar los componentes básicos de una aplicación en `Node.js` que usa `backend` y `frontend`.<br><br>
-Esta versión, no contiene `CSS` ni `JavaScript` del lado del cliente.<br><br>
 El proyecto implementa el uso de `.env`, un archivo de texto utilizado para definir variables de entorno en aplicaciones de software. Estas variables se utilizan típicamente para configurar aspectos sensibles de la aplicación, como credenciales de bases de datos, claves de API y otras configuraciones específicas del entorno.
 
 También hace uso de `package.json`, un componente esencial en proyectos `Node.js y JavaScript`. Este archivo de configuración proporciona información sobre el proyecto, incluidas las dependencias necesarias para su funcionamiento.
 
 ## Tabla de Contenidos
+-[Lo Nuevo](#lo-nuevo)<br>
 -[Instalación](#instalación)<br>
 -[Iniciar Servidor Web Local de la Aplicación](#iniciar-servidor-web-local-de-la-aplicación)<br>
 -[Uso](#uso)<br>
 
+## Lo Nuevo
+
+Esta versión, contiene `CSS` en el `frontend`. Se importa una fuenta local<br>
+Se completó parte del `backend`, pero solo la estructura de carpetas y archivos en blanco.<br>
 
 ## Instalación
 

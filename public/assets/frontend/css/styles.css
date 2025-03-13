@@ -1,0 +1,172 @@
+/* Importar fuente local */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Variables */
+:root {
+    --color-fondo-body:#000;
+    --color-primario: #ff9800;
+    --color-secundario: #e68900;
+    --color-fondo: rgba(255, 255, 255, 0.1);
+    --color-fondo-hover:rgba(255, 255, 255, 0.2);
+    --color-fondo-formulario: rgba(255, 255, 255, 0.2);
+    --color-texto: #fff;
+    --fuente-principal: 'Roboto', serif;
+    --sombra: 0 0 10px rgba(255, 255, 255, 0.2);
+    --padding-general: 15px;
+    --borde-radius: 10px;
+    --transition-background-color: background-color 0.3s ease;
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--color-fondo-body);
+    font-family: var(--fuente-principal);
+}
+
+/* Estilos para el menú */
+#nav-principal {
+    background: var(--color-fondo);
+    padding: var(--padding-general) 0;
+    text-align: center;
+}
+
+#nav-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#nav-principal li {
+    display: inline-block;
+}
+
+#nav-principal a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: var(--borde-radius);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Efecto de subrayado animado */
+#nav-principal a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-primario);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+#nav-principal a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+#nav-principal a:hover {
+    color: var(--color-primario);
+}
+
+/* Estilos para el contenido principal */
+main {
+    color: var(--color-texto);
+    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto 0 auto; /* Separar del nav */
+    background: var(--color-fondo);
+    border-radius: var(--borde-radius);
+    box-shadow: var(--sombra);
+    font-family: var(--fuente-principal);
+}
+
+main h3, main h2 {
+    font-size: 24px;
+    border-bottom: 2px solid var(--color-primario);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección About */
+section {
+    margin-bottom: 40px;
+    padding: var(--padding-general);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--borde-radius);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+.vision, .mision{
+    transition: var(--transition-background-color);
+}
+.vision:hover, .mision:hover{
+    background-color: var(--color-fondo-hover);
+}
+
+/* Estilos para el formulario de suscripción */
+#formSuscriptor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: var(--padding-general);
+    background: var(--color-fondo-formulario);
+    border-radius: var(--borde-radius);
+    box-shadow: var(--sombra);
+}
+
+#formSuscriptor label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#formSuscriptor input[type="email"] {
+    width: 98%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: var(--borde-radius);
+    outline: none;
+    background: var(--color-fondo-formulario);
+    color: var(--color-texto);
+}
+
+#formSuscriptor input[type="submit"] {
+    background: var(--color-primario);
+    color: var(--color-texto);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: var(--borde-radius);
+    cursor: pointer;
+    transition: var(--transition-background-color);
+}
+
+#formSuscriptor input[type="submit"]:hover {
+    background: var(--color-secundario);
+}
+
+#respuesta {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-primario);
+}
