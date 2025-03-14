@@ -1,10 +1,11 @@
 # Aplicación de ejemplo en Node.js
 
-![Versión](https://img.shields.io/badge/Versión-0.2.0-blue)
+![Versión](https://img.shields.io/badge/Versión-0.3.0-blue)
 
 Proyecto Web en `Node.js` desarrollado para el Instituto Profesional `Santo Tomás de Valdivia`, diseñado para demostrar los contenidos de la asignatura de `Programación Web`. Este proyecto está desarrollado en `JavaScript`, en el lado del cliente y en el lado del servidor utilizando `Node.js`.
 
-Esta versión, el proyecto solo sirve páginas estáticas, el `home` y `about`, es solo para mostrar los componentes básicos de una aplicación en `Node.js` que usa `backend` y `frontend`.<br><br>
+Esta versión, el proyecto solo sirve páginas estáticas, el `home` y `about`, en el `frontend` y el `login` del `backend`.<br>
+Proyecto solo para mostrar el funcionamiento y los componentes básicos de una aplicación en `Node.js` que usa `backend` y `frontend`.<br><br>
 El proyecto implementa el uso de `.env`, un archivo de texto utilizado para definir variables de entorno en aplicaciones de software. Estas variables se utilizan típicamente para configurar aspectos sensibles de la aplicación, como credenciales de bases de datos, claves de API y otras configuraciones específicas del entorno.
 
 También hace uso de `package.json`, un componente esencial en proyectos `Node.js y JavaScript`. Este archivo de configuración proporciona información sobre el proyecto, incluidas las dependencias necesarias para su funcionamiento.
@@ -17,8 +18,9 @@ También hace uso de `package.json`, un componente esencial en proyectos `Node.j
 
 ## Lo Nuevo
 
-Esta versión, contiene `CSS` en el `frontend`. Se importa una fuenta local<br>
-Se completó parte del `backend`, pero solo la estructura de carpetas y archivos en blanco.<br>
+Se instaló el `login.html` v2 usando la plantilla `AdminLTE`. Se modificó la interfaz del login, se quitaron opciones y se modificaron los textos a español.<br>
+El login no posee lógica de programación para iniciar sesión, pero sí se creó la lógica para cargar la `vista` del login.<br>
+La url para entrar al login es (suponiendo que configuraste el puerto 3000): http://127.0.0.1:3000/auth/login
 
 ## Instalación
 

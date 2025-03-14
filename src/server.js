@@ -9,7 +9,7 @@ const bodyParser = require('body-parser'); // Importar body-parser
 // Rutas
 const frontendRoutes = require('./routes/frontendRoutes');
 //const backendRoutes = require('./routes/backendRoutes');
-//const authRoutes = require('./routes/authRoutes'); // Importar el archivo de rutas de autenticación
+const authRoutes = require('./routes/authRoutes'); // Importar el archivo de rutas de autenticación
 
 const app = express();
 const port = process.env.SERVER_PORT || 3000;
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.use('/', frontendRoutes);
 //app.use('/sitio-admin', backendRoutes);
-//app.use('/auth', authRoutes);
+app.use('/auth', authRoutes);
 
 // Iniciar el servidor
 app.listen(port, () => {
